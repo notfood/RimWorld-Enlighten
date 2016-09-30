@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Enlighten</name>
+  <author>Ludeon Studios</author>
+  <url>https://ludeon.com/forums/index.php?topic=24427.0</url>
+  <targetVersion>0.15.0</targetVersion>
+  <description>You might want to build some lamps with this mod.
+  	-In a "Dark" environment, your colonists will have a hard time moving.
+  	-In a "Brightly lit" environment, your colonists will have a small bonus at movement and working.</description>
+</ModMetaData>
