@@ -10,21 +10,21 @@ namespace Enlighten
 		public float glowMin;
 		public float glowMax;
 
-		public override bool CheckGiveEverySecond (Pawn pawn)
+		public override void OnIntervalPassed (Pawn pawn, Hediff cause)
 		{
 			if (!pawn.Spawned) {
-				return false;
+				return;
 			}
 
 			if (!pawn.RaceProps.Humanlike) {
-				return false;
+				return;
 			}
 
 			if (!RestUtility.Awake (pawn)) {
-				return false;
+				return;
 			}
 
-			float glow = Find.GlowGrid.GameGlowAt (pawn.Position);
+			float glow = pawn.Map.glowGrid.GameGlowAt (pawn.Position);
 
 			Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef (this.hediff);
 
@@ -35,8 +35,6 @@ namespace Enlighten
 			} else if (firstHediffOfDef != null) {
 				pawn.health.RemoveHediff(firstHediffOfDef);
 			}
-
-			return false;
 		}
 	}
 

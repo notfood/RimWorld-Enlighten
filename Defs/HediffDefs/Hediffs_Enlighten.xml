@@ -19,7 +19,6 @@
         </capMods>
       </li>
     </stages>
-    <naturallyHealed>false</naturallyHealed>
   </HediffDef>
 
   <HediffDef ParentName="DiseaseBase">
@@ -40,7 +39,6 @@
         </capMods>
       </li>
     </stages>
-    <naturallyHealed>false</naturallyHealed>
   </HediffDef>
 
 </Defs>
