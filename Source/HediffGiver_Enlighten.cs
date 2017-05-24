@@ -24,9 +24,9 @@ namespace Enlighten
 				return;
 			}
 
-			float glow = pawn.Map.glowGrid.GameGlowAt (pawn.Position);
+			var glow = pawn.Map.glowGrid.GameGlowAt (pawn.Position);
 
-			Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef (this.hediff);
+			var firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef (this.hediff);
 
 			if (glow >= glowMin && glow <= glowMax) {
 				if (firstHediffOfDef == null) {
